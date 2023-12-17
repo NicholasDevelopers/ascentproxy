@@ -11,7 +11,7 @@ if [ -f "ascent" ]; then
     sleep 1
     echo -e "${GREEN}Getting proxy...${ENDCOLOR}"
 fi
-wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/shift
+wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/ascent
 sleep 1
 echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
 echo -e "${GREEN}Execute proxy with this command: ./ascent${ENDCOLOR}"
