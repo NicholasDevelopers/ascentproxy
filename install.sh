@@ -12,7 +12,8 @@ if [ -f "ascent" ]; then
     echo -e "${GREEN}Getting proxy...${ENDCOLOR}"
 fi
 wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/ascent
+wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/items.dat
 sleep 1
-echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
+echo -e "${GREEN}Ascent Proxy & Items Dat Installed${ENDCOLOR}"
 echo -e "${GREEN}Execute proxy with this command: ./ascent${ENDCOLOR}"
 chmod +x ascent
