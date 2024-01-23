@@ -13,7 +13,7 @@ if [ -f "ascent" ]; then
 fi
 if [ -f "items.dat" ]; then
     echo -e "${RED}Deleting old items.dat...${ENDCOLOR}"
-    rm ascent
+    rm items.dat
     sleep 1
     echo -e "${GREEN}Getting new items.dat...${ENDCOLOR}"
 fi
