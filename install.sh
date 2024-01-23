@@ -12,6 +12,12 @@ if [ -f "ascent" ]; then
     echo -e "${GREEN}Getting proxy...${ENDCOLOR}"
 fi
 wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/ascent
+if [ -f "items.dat" ]; then
+    echo -e "${RED}Deleting old items.dat...${ENDCOLOR}"
+    rm items.dat
+    sleep 1
+    echo -e "${GREEN}Getting the newest items.dat...${ENDCOLOR}"
+fi
 wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/items.dat
 sleep 1
 echo -e "${GREEN}Ascent Proxy & Items Dat Installed${ENDCOLOR}"
