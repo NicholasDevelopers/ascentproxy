@@ -11,12 +11,6 @@ if [ -f "ascent" ]; then
     sleep 1
     echo -e "${GREEN}Getting proxy...${ENDCOLOR}"
 fi
-if [ -f "items.dat" ]; then
-    echo -e "${RED}Deleting old items.dat...${ENDCOLOR}"
-    rm items.dat
-    sleep 1
-    echo -e "${GREEN}Getting new items.dat...${ENDCOLOR}"
-fi
 wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/ascent
 wget -q https://github.com/NicholasDevelopers/ascentproxy/raw/main/items.dat
 sleep 1
